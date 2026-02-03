@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Tails Adoption</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header {
+            background: #ff6b6b;
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+        }
+
+        header hr {
+            width: 50%;
+            height: 3px;
+            background: white;
+            border: none;
+            margin: 12px auto;
+        }
+
+        header img {
+            width: 240px;
+            border-radius: 14px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        section {
+            background: white;
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        ul, ol {
+            display: inline-block;
+            text-align: left;
+        }
+
+        h2 {
+            color: #e53e3e;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        input[type="submit"] {
+            background: #38a169;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <hr>
+        <h1>Happy Tails Adoption</h1>
+        <hr>
+
+        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b"
+             alt="Happy Pets">
+
+        <p>
+            Connecting caring people with lovable pets for a lifetime of joy.
+        </p>
+    </header>
+
+    <section>
+        <h2>Choose a Companion</h2>
+        <ul>
+            <li>Dog – Loyal and playful</li>
+            <li>Cat – Calm and affectionate</li>
+            <li>Fish – Peaceful and elegant</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to Get a Pet</h2>
+        <ol>
+            <li>Select a pet</li>
+            <li>Submit your details</li>
+            <li>Receive confirmation</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Tell Us About You</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <select required>
+                <option>Select Pet</option>
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Fish</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Happy Tails Adoption</p>
+        <p>Created by Sherwin Richie J</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
