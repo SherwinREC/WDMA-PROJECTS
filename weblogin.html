@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Tails Adoption</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            display:none;
+        }
+
+        header {
+            background: #ff6b6b;
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+        }
+
+        header hr {
+            width: 50%;
+            height: 3px;
+            background: white;
+            border: none;
+            margin: 12px auto;
+        }
+
+        header img {
+            width: 240px;
+            border-radius: 14px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        section {
+            background: white;
+            margin-top: 25px;
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        ul, ol {
+            display: inline-block;
+            text-align: left;
+        }
+
+        h2 {
+            color: #e53e3e;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        input[type="submit"] {
+            background: #38a169;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #555;
+        }
+
+        .login-overlay{
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:#f4f6f8;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .login-box{
+            background:white;
+            padding:40px;
+            width:320px;
+            border-radius:16px;
+            text-align:center;
+            box-shadow:0 0 10px #aaa;
+        }
+
+        .login-box input{
+            width:100%;
+            padding:10px;
+            margin:10px 0;
+        }
+
+        .login-box button{
+            width:100%;
+            padding:10px;
+            background:#38a169;
+            color:white;
+            border:none;
+            font-weight:bold;
+        }
+
+        #msg{color:red;}
+    </style>
+</head>
+
+<body>
+
+<div class="login-overlay" id="login">
+
+<div class="login-box">
+
+<h2 style="color:#ff6b6b">Login</h2>
+
+<input type="text" id="username" placeholder="Username">
+<input type="password" id="password" placeholder="Password">
+
+<button id="loginBtn">Login</button>
+
+<p id="msg"></p>
+
+</div>
+</div>
+
+<div class="container" id="site">
+
+<header>
+<hr>
+<h1>Happy Tails Adoption</h1>
+<hr>
+
+<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b">
+
+<p>
+Connecting caring people with lovable pets for a lifetime of joy, a companion if you are lonely.
+</p>
+</header>
+
+<section>
+<h2>Choose a Companion which suits you</h2>
+<ul>
+<li><h2>Buddy (Dog)</h2> – Buddy is a loyal, playful companion who fills every moment with joy and tail-wagging happiness.
+Perfect for families and first-time pet parents, he loves walks, cuddles, and games.
+Bring Buddy home and gain a best friend for life.</li>
+<li><h2>Whiskers (Cat)</h2> – Whiskers is a gentle, curious kitty with a heart full of warmth and soft purrs.
+She enjoys cozy naps, playful chasing, and quiet bonding moments.
+Adopt Whiskers and add calm charm to your home.</li>
+<li><h2>Aqua glow (Fish)</h2> – Aqua Glow brings vibrant colors and peaceful energy to any space.
+Easy to care for and mesmerizing to watch, it’s perfect for beginners.
+Let Aqua Glow brighten your room with serene beauty.</li>
+</ul>
+</section>
+
+<section>
+<h2>How to Get a Pet</h2>
+<ol>
+<li>   Select a pet    </li>
+<li>   Submit your details   </li>
+<li>   Receive confirmation   </li>
+</ol>
+</section>
+
+<section>
+<h2>Tell Us About You</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<select required>
+<option>Select Pet</option>
+<option>Dog</option>
+<option>Cat</option>
+<option>Fish</option>
+</select>
+<input type="submit" value="Submit">
+</form>
+</section>
+
+<footer>
+<p>&copy; @2026 Happy Tails Adoption</p>
+<p>Copyrighted by Sherwin Richie J</p>
+</footer>
+
+</div>
+
+<script>
+
+document.getElementById("loginBtn").addEventListener("click",function(){
+
+var u=document.getElementById("username").value;
+var p=document.getElementById("password").value;
+
+if(u==="sherwin" && p==="password"){
+
+document.getElementById("login").style.display="none";
+document.getElementById("site").style.display="block";
+
+}else{
+
+document.getElementById("msg").innerHTML="Invalid Username or Password";
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
